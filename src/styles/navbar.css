@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "VC";
+    src: url("../assets/fonts/RespondentBlack_PERSONAL_USE_ONLY.otf");
+}
+
+@font-face {
+    font-family: "thin";
+    src: url("../assets/fonts/RespondentLight_PERSONAL_USE_ONLY.otf");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: fit-content;
+    padding-right: 10%;
+    padding-left: 10%;
+    /* outline: 1px solid red; */
+    background-color:#ffffff00;
+    outline: 1px solid red;
+    
+    
+}
+
+
+h1{
+
+    font-family:"VC";
+    font-size: 55px;
+    color: #5c1031;
+    
+}
+
+.glasses{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    gap: 25px;
+    /* outline: 1px solid red; */
+}
+Button{
+    text-align: center;
+    font-family:"regular";
+    font-size: large;
+    cursor: pointer;
+    font-family: "thin";
+    font-size: larger;
+    padding: 3%;
+    height: 55px;
+    width:140px;
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+    
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.84);
+    
+}
+
+.left
+{
+    background: linear-gradient(to right,#ff83c3,#970e4a);
+    border-radius: 0rem 8rem 0rem 8rem;
+
+}
+.right{
+    background: linear-gradient(to left,#ff83c3,#970e4a);
+    border-radius: 8rem 0rem 8rem 0rem;
+}
+
+.left:hover {
+    background: linear-gradient(to right,#fe47a6,#821142);
+    box-shadow: 0 4px 8px #420045 ;
+  }
+
+  .right:hover{
+    background: linear-gradient(to left,#fe47a6,#821142);
+    box-shadow: 0 4px 8px #420045 ;
+  }
+    
+
+  .container{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeText
+{
+    font-family: 'regular';
+    font-size: 100px;
+    padding-left: 10%;
+}
+
+span{
+    font-family: "VC";
+    font-size: 150px;
+    transform: rotate(-20deg);
+}
+
+.picture{
+    width: 60%;
+    height: 50%;
+    
+}
+img{
+    width: 90%;
+    /* padding-left: 3%; */
+
+}
