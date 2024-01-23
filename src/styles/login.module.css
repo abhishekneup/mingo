@@ -1,0 +1,18 @@
+
+.main
+    {
+    display:flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     height: 10vh;   
+     outline: 1px solid red;
+    }
+
+.container {
+    background-color: aqua;
+    outline: 1px solid red;
+
+
+    
+}

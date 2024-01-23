@@ -13,7 +13,9 @@
     src: url("../assets/fonts/Poppins-Regular.ttf");
 }
 
-
+*{
+    background-color: #ffccd9;
+}
 .nav{
     display: flex;
     justify-content:space-around;
@@ -26,17 +28,11 @@
 }
 
 
-h1{
-
-    font-family:"VC";
-    font-size: 55px;
-    color: #5c1031;
-    
-}
 
 .logoName{
     font-family:'vc';
     font-size: 35px;
+    color: #5c1031;
 }
 
 .glasses{
@@ -47,7 +43,8 @@ h1{
     gap: 25px;
     
 }
-.left .right{
+
+button{
     text-align: center;
     font-family:"regular";
     font-size: large;
@@ -69,20 +66,7 @@ h1{
 {
     background: linear-gradient(to right,#ff83c3,#970e4a);
     border-radius: 0rem 8rem 0rem 8rem;
-    text-align: center;
-    font-family:"regular";
-    font-size: large;
-    cursor: pointer;
-    font-family: "thin";
-    font-size: larger;
-    padding: 3%;
-    height: 55px;
-    width:140px;
-    border-style: double;
-    border-color: rgb(255, 255, 255);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.84);
+   
 
 }
 .right{
@@ -90,20 +74,6 @@ h1{
     background: linear-gradient(to left,#ff83c3,#970e4a);
     border-radius: 8rem 0rem 8rem 0rem;
 
-    text-align: center;
-    font-family:"regular";
-    font-size: large;
-    cursor: pointer;
-    font-family: "thin";
-    font-size: larger;
-    padding: 3%;
-    height: 55px;
-    width:140px;
-    border-style: double;
-    border-color: rgb(255, 255, 255);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.84);
 }
 
 .left:hover {
@@ -129,6 +99,7 @@ h1{
     font-family: 'regular';
     font-size: 100px;
     padding-left: 10%;
+    color: #5c1031;
 }
 
 

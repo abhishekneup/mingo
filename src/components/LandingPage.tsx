@@ -1,4 +1,4 @@
-import '../styles/landingPage.css'
+import LPcss from '../styles/LandingPage.module.css'
 import vase from '../assets/images/doffy.png';
 
 
@@ -8,24 +8,24 @@ function Navbar()
     
       <div>
 
-       <div className="nav">
+       <div className={LPcss.nav}>
           
-          <h1 className='logoName'>Mingo!</h1>
+          <h1 className={LPcss.logoName}>Mingo!</h1>
   
-        <div className="glasses">
+        <div className={LPcss.glasses}>
 
-          <a href='#'><button className='left'>Login</button></a>
-          <a href='#'><button className='right'>Register</button></a>
+          <a href='#'><button className={LPcss.left}>Login</button></a>
+          <a href='#'><button className={LPcss.right}>Register</button></a>
         
         </div>
        </div>
 
-         <div className="container">
+         <div className={LPcss.container}>
 
-         <div className="picture">
+         <div className={LPcss.picture}>
              <img src={vase} alt='picture'></img>
          </div>
-         <h1 className='welcomeText'>Welcome to <span>Mingo!</span></h1>
+         <h1 className={LPcss.welcomeText}>Welcome to <span>Mingo!</span></h1>
          
      </div>
    
