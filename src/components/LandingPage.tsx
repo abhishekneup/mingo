@@ -1,4 +1,4 @@
-import '../styles/navbar.css'
+import '../styles/landingPage.css'
 import vase from '../assets/images/doffy.png';
 
 
@@ -10,7 +10,7 @@ function Navbar()
 
        <div className="nav">
           
-          <h1 className='logoName'>Mingo !</h1>
+          <h1 className='logoName'>Mingo!</h1>
   
         <div className="glasses">
 
