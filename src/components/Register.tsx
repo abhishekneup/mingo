@@ -13,7 +13,7 @@ function Registration(){
                     <label>Password</label>
                     <input type="password" placeholder="Enter Password"></input> 
                     <label>Confirm Password</label>
-                    <input type="password" placeholder="Re-enter Password"></input>             
+                    <input type="password " placeholder="Re-enter Password"></input>             
                 </form>
             </div>
         </div>
