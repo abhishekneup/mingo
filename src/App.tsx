@@ -1,15 +1,31 @@
-import Navbar from './components/LandingPage'
-// import Registration from './components/Register'
-import Login from './components/login'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import LandingPage from './components/LandingPage';
+import Login from './components/login';
+import Registration from './components/Register';
 
-function App() {
+const App = () => {
   return (
     <div>
-    {/* <Login/> */}
-    <Navbar />
-    {/* <Registration/> */}
-    </div>
-  )
-}
+        <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path="/">
+            <LandingPage />
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route path="/register">
+            <Registration/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+        
+      </div>
+  );
+};
 
-export default App
+export default App;
