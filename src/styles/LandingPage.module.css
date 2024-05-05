@@ -36,11 +36,11 @@
 }
 
 .glasses{
-    width: 20%;
+    width: 22%;
     display: flex;
     justify-content: space-between;
     height: auto;
-    gap: 25px;
+    gap: 20px;
     
 }
 

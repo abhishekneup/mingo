@@ -1,31 +1,36 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Login from './components/login';
+import Navbar from './components/Navbar';
 import Registration from './components/Register';
 
 const App = () => {
-  return (
+
+  const handleLoginClick = () => {
+    window.location.href = '/login';
+  };
+
+  const handleRegisterClick = () => {
+    window.location.href = '/register';
+  };
+
+  const path = window.location.pathname;
+
+  if (path === '/login') {
+    return <Login />;
+  }
+
+  if (path === '/register') {
+    return <Registration />;
+  };
+
+  return(
     <div>
-        <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/">
-            <LandingPage />
-          </Route>
-          <Route path="/login">
-            <Login/>
-          </Route>
-          <Route path="/register">
-            <Registration/>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-        
-      </div>
+
+    <LandingPage onLoginClick={handleLoginClick} onRegisterClick={handleRegisterClick} />
+    </div>
   );
+  
+  
 };
 
 export default App;
