@@ -1,13 +1,28 @@
 import LPcss from '../styles/LandingPage.module.css'
 import vase from '../assets/images/doffy.png';
 
+type LandingPageProps = {
+  onLoginClick: () => void;
+  onRegisterClick: () => void;
+};
 
-function LandingPage()
+const LandingPage: React.FC<LandingPageProps> = ({onLoginClick, onRegisterClick}) =>
 {
     return(
     
       <div>
+          <div className={LPcss.nav}>
+          
+          <h1 className={LPcss.logoName}>Mingo!</h1>
+  
+        <div className={LPcss.glasses}>
 
+        <button className={LPcss.left} onClick={onLoginClick}>Login</button>
+         <button className={LPcss.right} onClick={onRegisterClick}>Register</button>
+        
+        </div>
+
+       </div>
          <div className={LPcss.container}>
 
                     <div className={LPcss.picture}>
