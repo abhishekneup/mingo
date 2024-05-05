@@ -1,6 +1,5 @@
 import LandingPage from './components/LandingPage';
 import Login from './components/login';
-import Navbar from './components/Navbar';
 import Registration from './components/Register';
 
 const App = () => {
