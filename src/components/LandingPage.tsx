@@ -13,7 +13,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick
 
      return(
     
-    <div>
+    <div className='main'>
 
         <div className={LPcss.nav}>
                   
