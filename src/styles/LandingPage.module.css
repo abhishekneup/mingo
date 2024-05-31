@@ -31,13 +31,13 @@
     padding: 0;
     height:100vh;
     overflow: hidden;
-    outline: 1px solid red;
+    
 }
 .nav{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    height: fit-content;
+    /* height: fit-content; */
     margin: 2.7rem 1rem;
     gap:30%;
     background-color:#ffffff00;
@@ -45,12 +45,13 @@
 }
 
 
+.logo {
+    width: 12rem; /* adjust the width as needed */
+    height: auto;
+    margin-right: 16px;
+    margin-left: 2rem;
+  }
 
-.logoName{
-    font-family:'vc';
-    font-size: 35px;
-    color: #5c1031;
-}
 
 .glasses{
     width: 22%;
@@ -107,7 +108,7 @@ button{
   .container{
     display: flex;
     margin-left: 2rem ;
-   
+    margin-top: -2rem;
     height : 75vh;
     justify-content: center;
     align-items: center;

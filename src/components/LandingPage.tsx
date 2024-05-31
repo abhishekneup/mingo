@@ -1,5 +1,6 @@
 import LPcss from '../styles/LandingPage.module.css'
 import vase from '../assets/images/doffy.png';
+import logo from '../assets/images/MINGO.png';
 import { useState } from 'react';
 
 type LandingPageProps = {
@@ -17,7 +18,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick
 
         <div className={LPcss.nav}>
                   
-                  <h1 className={LPcss.logoName}>Mingo!</h1>
+                  <img src={logo} className={LPcss.logo} alt="logo"></img>
           
                 <div className={LPcss.glasses}>
 
