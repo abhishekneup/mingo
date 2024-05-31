@@ -13,15 +13,32 @@
     src: url("../assets/fonts/Poppins-Regular.ttf");
 }
 
-*{
+/* html, body {
+    
+    background-color:'#ffccd9';
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  } */
+/* *{
     background-color: #ffccd9;
+} */
+
+.main{
+    background-color: #ffccd9;
+    width: 100wh;
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    overflow: hidden;
+    outline: 1px solid red;
 }
 .nav{
     display: flex;
     justify-content:space-around;
     align-items: center;
     height: fit-content;
-    margin: 1rem 1rem;
+    margin: 2.7rem 1rem;
     gap:30%;
     background-color:#ffffff00;
     /* background-color:rgb(255, 182, 217); */
@@ -89,33 +106,36 @@ button{
 
   .container{
     display: flex;
-    margin: 1rem 1rem 1rem 5rem;
+    margin-left: 2rem ;
+   
+    height : 75vh;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .welcomeText
 {
     font-family: 'regular';
     font-size: 100px;
-    padding-left: 10%;
+    padding-right: 1rem;
+    margin-right: 3rem;
+    margin-left:-4rem;
     color: #5c1031;
+  
 }
 
 
 
-span{
+.spanMingo{
     font-family: "VC";
     font-size: 150px;
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
 }
 
 .picture{
-    width: 60%;
-    height: 50%;
+    padding-left: 10px;
+    width: 50%;
     
-}
-img{
-    width: 90%;
-
+    
 }

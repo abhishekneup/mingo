@@ -13,7 +13,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick
 
      return(
     
-    <div className='main'>
+    <div className={LPcss.main}>
 
         <div className={LPcss.nav}>
                   
@@ -31,9 +31,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick
          <div className={LPcss.container}>
 
                     <div className={LPcss.picture}>
-                        <img src={vase} alt='picture'></img>
+                        <img src={vase} style={{width:'70%'}} alt='picture'></img>
                     </div>
-                <h1 className={LPcss.welcomeText}>Welcome to <span>Mingo!</span></h1>
+                <h1 className={LPcss.welcomeText}>Welcome to <span><p className={LPcss.spanMingo}>Mingo!</p></span></h1>
          </div>
    
     </div>
