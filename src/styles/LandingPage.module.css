@@ -107,8 +107,8 @@ button{
 
   .container{
     display: flex;
-    margin-left: 2rem ;
-    margin-top: -2rem;
+    margin-left: 12rem ;
+    margin-top: -1.5rem;
     height : 75vh;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,7 @@ button{
 .spanMingo{
     font-family: "VC";
     font-size: 150px;
-    transform: rotate(-10deg);
+    transform: rotate(-12.5deg);
 }
 
 .picture{

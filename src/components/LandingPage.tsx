@@ -31,10 +31,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick
 
          <div className={LPcss.container}>
 
+                <h1 className={LPcss.welcomeText}>Welcome to <span><p className={LPcss.spanMingo}>Mingo!</p></span></h1>
                     <div className={LPcss.picture}>
                         <img src={vase} style={{width:'70%'}} alt='picture'></img>
                     </div>
-                <h1 className={LPcss.welcomeText}>Welcome to <span><p className={LPcss.spanMingo}>Mingo!</p></span></h1>
          </div>
    
     </div>
