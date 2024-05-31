@@ -1,25 +1,20 @@
-import { useState } from 'react';
-import styles from "../styles/login.module.css"  
 
+import loginCSS from "../styles/login.module.css"
+import"../index.css"
 
+function App() {
+ 
 
-const Login = () => {
-
-  const[email,setEmail]=useState();
-  const[password,setPassword]=useState();
-  const[rememberME, setRememberMe]=useState(false);  
+  
 
   return (
-    
     <div>
-
-      <div className='flex flex-col justify-center items-center'>
-        <h1>Loginm</h1>
-
+      <div className="flex bg-slate-400  ">
+        <h1 className="text-emerald-800">login</h1>
       </div>
-    </div>
-   
-  );
-};
 
-export default Login;
+    </div>
+  );
+}
+
+export default App;
