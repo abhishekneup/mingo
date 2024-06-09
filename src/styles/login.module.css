@@ -138,13 +138,13 @@ label {
     }
     
     .ImgSide {
-        width: 90%;
+        width: 30rem;
         height: 50%;
         border-radius: 2rem 2rem 0 0;
     }
     
     .InputSide {
-        width: 94%;
+        width: 31rem;
         height: 50%;
         border-radius: 0 0 2rem 2rem;
     }
@@ -163,7 +163,7 @@ label {
         width: 50%;
         margin-left: 0;
     }
-    .RegisterHere {
+    .Remember  {
         padding-left: 0;
         gap:10px;
         padding-bottom: 10px;
@@ -178,10 +178,12 @@ label {
     }
     
     .ImgSide {
+        width: 21rem;
         height: 40%;
     }
     
     .InputSide {
+        width: 22rem;
         height: 60%;
     }
     
@@ -189,7 +191,7 @@ label {
         width: 50%;
     }
     
-    .RegisterHere {
+    .Remember  {
         padding-left: 0;
         gap:10px;
         padding-bottom: 10px;
@@ -210,11 +212,15 @@ label {
         height: 3rem;
         width: 50%;
     }
-    .RegisterHere {
-        padding-left: 0;
-        gap:10px;
+    .Remember {
+        padding-left: 1px;
+        font-size: x-small;
+        gap:2px;
         padding-bottom: 10px;
     }
+    .RegisterHere {
 
+        font-size: small;
+    }
 
 }
