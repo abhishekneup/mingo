@@ -1,15 +1,25 @@
 import LPcss from '../styles/LandingPage.module.css'
 import vase from '../assets/images/doffy.png';
 import logo from '../assets/images/MINGO.png';
-import { useState } from 'react';
+import Login from './login';
+import Registration from './Register';
+import Home from './Home';
 
-type LandingPageProps = {
-  onLoginClick: () => void;
-  onRegisterClick: () => void;
-};
 
-const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick }) => {
 
+const LandingPage = () => {
+  const path = window.location.pathname;
+  if (path === '/login') {
+    return <Login />;
+  }
+
+  if (path === '/register') {
+    return <Registration />;
+  };
+
+  if (path === '/home') {
+    return <Home/>;
+  };
 
      return(
     
@@ -21,9 +31,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLoginClick, onRegisterClick
           
                 <div className={LPcss.glasses}>
 
-                    <button className={LPcss.left} onClick={onLoginClick}>Login</button>
-                   <button className={LPcss.right} onClick={onRegisterClick}>Register</button>
-                
+              <a href="/login"><button className={LPcss.left} >Login</button></a>
+              <a href="/register"> <button className={LPcss.right} >Register</button></a>
+                              
                 </div>
         </div>
 

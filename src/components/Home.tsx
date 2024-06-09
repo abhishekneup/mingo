@@ -1,13 +1,19 @@
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
-function Home()
+import Login from "./login"
+import Registration from "./Register"
+
+
+const Home=()=>
 {
     return(
         <Router>
                 <Routes>
-                <Route path="/" element={<h2>Home</h2>}/>
-                <Route path="/" element={<h2>Create Post</h2>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/register" element={<Registration/>}/>
                 </Routes>
             </Router>
 
 )
 }
+
+export default Home

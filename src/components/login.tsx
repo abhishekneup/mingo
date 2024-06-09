@@ -4,8 +4,8 @@ import"../index.css"
 import vase from "../assets/images/bird.jpg"
 
 function Login() {
- 
 
+  
   
 
   return (
@@ -37,13 +37,13 @@ function Login() {
             required
             /><br/>
             
-            <button className={loginCSS.btn} type="submit">Login</button><br/>
+           <button className={loginCSS.btn} type="submit">Login</button><br/>
             </form>
           
             
           <div className={loginCSS.Remember}>
           <input type="checkbox" aria-label="Remember me"></input>
-          <label>Remember me</label>
+          <a href="/home"> <label>Remember me</label></a>
             <a href="/register">
           <p className={loginCSS.RegisterHere}>
           Else, Register Here
