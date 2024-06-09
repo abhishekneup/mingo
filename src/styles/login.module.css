@@ -1,42 +1,40 @@
-.loginMain{
+.loginMain {
     display: flex;
-    width: 100wh;
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
     background: #6c0e3f;
-
 }
 
-.LoginBOX
-{
+.LoginBOX {
     padding: 5%;
     display: flex;
     width: 55%;
     height: 65%;
     border-radius: 2rem;
-    
+    flex-direction: row;
 }
 
-.ImgSide{
-    
+.ImgSide {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 2rem;
     width: 60%;
-    height:100%;
+    height: 100%;
     overflow: hidden;
-    background-color:#ffccd9;
+    background-color: #ffccd9;
     border-radius: 2rem 0 0 2rem;
     padding-top: 20px;
 }
-.pic{
+
+.pic {
     height: 100%;
+    width: auto;
 }
 
-
-.InputSide{
+.InputSide {
     display: flex;
     padding-left: 1rem;
     flex-direction: column;
@@ -45,99 +43,178 @@
     padding-top: 20px;
     width: 100%;
     height: 100%;
-    background-color:#ffccd9;
-        border-radius: 0 2rem 2rem 0 ;
+    background-color: #ffccd9;
+    border-radius: 0 2rem 2rem 0;
 }
 
-.LoginText{
+.LoginText {
     text-align: center;
-  
     margin-bottom: 2rem;
     font-family: "regular";
     font-weight: bold;
-    color:  #5c1031;
+    color: #5c1031;
 }
 
-.LoginForm
-{
+.LoginForm {
     display: flex;
     flex-direction: column;
     padding-left: 6rem;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     width: 100%;
-
-    
 }
 
 label {
-    font-family:"regular";
+    font-family: "regular";
     color: #5c1031;
-    font-size:larger;
-    font-weight:600;
-
-    
-   
+    font-size: larger;
+    font-weight: 600;
 }
- 
-.btn{
+
+.btn {
     margin-top: 10px;
     margin-left: 1rem;
     text-align: center;
-    font-family:"regular";
+    font-family: "regular";
     font-size: large;
     cursor: pointer;
     font-size: larger;
     height: 3.5rem;
-    width:10rem;
+    width: 10rem;
     border-style: double;
     border-color: rgb(255, 255, 255);
     transition: background 0.3s ease, box-shadow 0.3s ease;
     color: white;
     box-shadow: 0 4px 8px rgba(85, 5, 5, 0.84);
-    background: linear-gradient(to right,#f265ae,#970e4a);
+    background: linear-gradient(to right, #f265ae, #970e4a);
     border-radius: 0.5rem 1rem 0.5rem 1rem;
-
 }
 
-.loginlabels{
-   color:#6c0e3f;
-    width:20rem;
+.loginlabels {
+    color: #6c0e3f;
+    width: 70%;
     height: 3rem;
     text-align: left;
     padding-left: 1rem;
     border-radius: 0.5rem;
-    margin:0.5rem;
-    font-family:"regular";
-    
-
-    
+    margin: 0.5rem;
+    font-family: "regular";
 }
 
 .btn:hover {
-    background: linear-gradient(to right,#ff0084,#821142);
-    box-shadow: 0 1px 4px #f783ff ;
-  }
+    background: linear-gradient(to right, #ff0084, #821142);
+    box-shadow: 0 1px 4px #f783ff;
+}
 
-  .Remember{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* gap: 1rem; */
-        font-size: small;
-        font-weight: 400;
-        margin-top: 1rem ;
-  }
+.Remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 400;
+    margin-top: 1rem;
+}
 
-
-
-  .RegisterHere{
+.RegisterHere {
     font-family: "regular";
     font-size: large;
     color: #5c1031;
     padding-left: 3rem;
     text-decoration: underline;
+}
 
-  }
+/* Responsive Design */
 
-  
+@media (max-width: 1200px) {
+    .LoginBOX {
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .pic{
+        height:20%;
+        width: 30%;
+    }
+    
+    .ImgSide {
+        width: 90%;
+        height: 50%;
+        border-radius: 2rem 2rem 0 0;
+    }
+    
+    .InputSide {
+        width: 94%;
+        height: 50%;
+        border-radius: 0 0 2rem 2rem;
+    }
+    
+    .LoginForm {
+        padding-left: 2rem;
+        padding-right: 3rem;
+        align-items: center;
+    }
+    
+    .loginlabels {
+        width: 80%;
+    }
+    
+    .btn {
+        width: 50%;
+        margin-left: 0;
+    }
+    .RegisterHere {
+        padding-left: 0;
+        gap:10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .LoginBOX {
+        width: 80%;
+        padding: 1rem;
+    }
+    
+    .ImgSide {
+        height: 40%;
+    }
+    
+    .InputSide {
+        height: 60%;
+    }
+    
+    .btn {
+        width: 50%;
+    }
+    
+    .RegisterHere {
+        padding-left: 0;
+        gap:10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .LoginText {
+        font-size: 1.2rem;
+    }
+    
+    label {
+        font-size: medium;
+    }
+    
+    .btn {
+        font-size: medium;
+        height: 3rem;
+        width: 50%;
+    }
+    .RegisterHere {
+        padding-left: 0;
+        gap:10px;
+        padding-bottom: 10px;
+    }
+
+
+}
