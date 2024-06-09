@@ -6,13 +6,7 @@ import Registration from "./Register"
 const Home=()=>
 {
     return(
-        <Router>
-                <Routes>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/register" element={<Registration/>}/>
-                </Routes>
-            </Router>
-
+        <h1>Hello this is home</h1>
 )
 }
 
