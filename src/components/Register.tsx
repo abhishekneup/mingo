@@ -1,55 +1,75 @@
-import loginCSS from "../styles/login.module.css"
+import RegisterCSS from "../styles/register.module.css"
 import mingo from "../assets/images/vase.png"
 function Registration(){
     return(
-        <div className={loginCSS.loginMain}>
-      <div className={loginCSS.LoginBOX}>
-        <div className={loginCSS.ImgSide}>
-        <img className={loginCSS.pic} src={mingo} alt="pic"></img>
+        <div className={RegisterCSS.RegMain}>
+      <div className={RegisterCSS.RegBOX}>
+        <div className={RegisterCSS.ImgSide}>
+        <img className={RegisterCSS.pic} src={mingo} alt="pic"></img>
         </div>
-      <div className={loginCSS.InputSide}>
+      <div className={RegisterCSS.InputSide}>
 
-            <form className={loginCSS.LoginForm}>
+            <form className={RegisterCSS.RegForm}>
+              <div className={RegisterCSS.Names}>
+            <div className={RegisterCSS.FirstName}>
+              
             <label>First Name</label>
             <input
             type="text"
             placeholder="First Name"
-            className={loginCSS.loginlabels}
+            className={RegisterCSS.ReglabelsNames}
             required>
             </input>
+              </div>
+
+            <div className={RegisterCSS.FirstName}>
 
             <label>Last Name</label>
             <input
             type="text"
             placeholder="Last Name"
-            className={loginCSS.loginlabels}
+            className={RegisterCSS.ReglabelsNames}
             required>
             </input>
-
+              </div>
+              
+              </div>
+            <br></br>
             <label>
               Email
             </label>
+
             <input
             type="email"
             placeholder="Enter Email"
-            className={loginCSS.loginlabels}
+            className={RegisterCSS.Reglabels}
             required
             /><br/>
             <label>Password</label>
             <input
             type="password"
             placeholder="Enter password"
-            className={loginCSS.loginlabels}
+            className={RegisterCSS.Reglabels}
             required
-            /><br/>
+            />
+            <br/>
+            <label>Confirm Password</label>
+            <input
+            type="password"
+            placeholder="Re-enter password"
+            className={RegisterCSS.Reglabels}
+            required></input>
+            <br/>
             
-            <button className={loginCSS.btn} type="submit">Login</button><br/>
+            <button className={RegisterCSS.btn} type="submit">Register</button><br/>
             </form>
             
-          <div className={loginCSS.Remember}>
-          <input type="checkbox" aria-label="Remember me"></input>
-          <label>Remember me</label>
-          <p className={loginCSS.RegisterHere}>Else, Register Here</p>
+          <div className={RegisterCSS.already}>
+          
+          <p className={RegisterCSS.RegisterHere}>Already have an account? <a href="/login">
+          Login Here
+          </a>
+          </p>
           
        </div>
       

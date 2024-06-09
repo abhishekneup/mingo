@@ -15,6 +15,8 @@ function Login() {
         <img className={loginCSS.pic} src={vase} alt="pic"></img>
         </div>
       <div className={loginCSS.InputSide}>
+        <h1 className={loginCSS.LoginText}>Login</h1>
+            
 
             <form className={loginCSS.LoginForm}>
 
@@ -37,11 +39,16 @@ function Login() {
             
             <button className={loginCSS.btn} type="submit">Login</button><br/>
             </form>
+          
             
           <div className={loginCSS.Remember}>
           <input type="checkbox" aria-label="Remember me"></input>
           <label>Remember me</label>
-          <p className={loginCSS.RegisterHere}>Else, Register Here</p>
+            <a href="/register">
+          <p className={loginCSS.RegisterHere}>
+          Else, Register Here
+          </p>
+          </a>
           
        </div>
       
