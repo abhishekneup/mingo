@@ -2,12 +2,31 @@
 import loginCSS from "../styles/login.module.css"
 import"../index.css"
 import vase from "../assets/images/bird.jpg"
+import { useState } from "react";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../config/firebase";
 
 
 function Login() {
 
   
+  const [email, setEmail]=useState("");
+  const [password,setPassword]=useState("");
+
+  const LogSignIn=async ()=>{
+
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      alert('Login successful!');
+    } catch (error) {
+      console.error('Error during login:', error);
+      alert('Login failed!');
+    }
+
+  };
+
   
+
 
   return (
     <div className={loginCSS.loginMain}>
@@ -19,7 +38,7 @@ function Login() {
         <h1 className={loginCSS.LoginText}>Login</h1>
             
 
-            <form className={loginCSS.LoginForm}>
+            <form className={loginCSS.LoginForm} onSubmit={LogSignIn}>
 
             <label>
               Email
@@ -27,6 +46,9 @@ function Login() {
             <input
             type="email"
             placeholder="Enter Email"
+
+            onChange={(e)=>setEmail(e.target.value)}
+
             className={loginCSS.loginlabels}
             required
             /><br/>
@@ -34,11 +56,14 @@ function Login() {
             <input
             type="password"
             placeholder="Enter password"
+
+            onChange={(e)=>setPassword(e.target.value)}
+
             className={loginCSS.loginlabels}
             required
             /><br/>
             
-           <button className={loginCSS.btn} type="submit">Login</button><br/>
+           <button className={loginCSS.btn} type="submit" >Login</button><br/>
             </form>
           
             
