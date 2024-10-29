@@ -11,14 +11,29 @@ function Registration(){
     const [email, setEmail]=useState("");
     const [password, setPassword]=useState("");
     const [ConfirmPassword, setConfirmPassword]=useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
-
-    const SignIN= async ()=>{
-      // if{password==ConfirmPassword}
-      await createUserWithEmailAndPassword(auth,email,password)
-
+    const SignIN = async (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault(); // Prevent page refresh
+  
+      if (password !== ConfirmPassword) {
+        setErrorMessage("Passwords do not match!");
+        return;
+      }
+  
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        // Handle successful registration
+      } catch (error) {
+        // Safely handle 'error' of type 'unknown'
+        if (error instanceof Error) {
+          setErrorMessage(error.message); // Access 'message' safely
+        } else {
+          setErrorMessage("An unexpected error occurred.");
+        }
+      }
     };
-
+  
   return(
         <div className={RegisterCSS.RegMain}>
       <div className={RegisterCSS.RegBOX}>
@@ -27,7 +42,7 @@ function Registration(){
         </div>
       <div className={RegisterCSS.InputSide}>
 
-            <form className={RegisterCSS.RegForm}>
+            <form className={RegisterCSS.RegForm} onSubmit={SignIN}>
               <div className={RegisterCSS.Names}>
             <div className={RegisterCSS.FirstName}>
               
@@ -96,8 +111,8 @@ function Registration(){
             className={RegisterCSS.Reglabels}
             required></input>
             <br/>
-            
-            <button className={RegisterCSS.btn} type="submit" onClick={SignIN}>Register</button><br/>
+            {errorMessage && <p className={RegisterCSS.error}>{errorMessage}</p>}
+            <button className={RegisterCSS.btn} type="submit">Register</button><br/>
             </form>
             
           <div className={RegisterCSS.already}>
