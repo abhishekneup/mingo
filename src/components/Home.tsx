@@ -6,7 +6,7 @@ import Registration from "./Register"
 const Home=()=>
 {
     return(
-        <h1>Hello this is home</h1>
+        <h1> Sorry this site currently under Development</h1>
 )
 }
 
