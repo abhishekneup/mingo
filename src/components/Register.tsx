@@ -32,6 +32,8 @@ function Registration(){
           setErrorMessage("An unexpected error occurred.");
         }
       }
+
+   
     };
   
   return(
