@@ -1,7 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth,GoogleAuthProvider } from "firebase/auth";
 
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth/cordova";
 const firebaseConfig = {
   apiKey: "AIzaSyANlbWfdkMGnZ2MxvSREi9vqczvij4pRs0",
   authDomain: "mingo-425906.firebaseapp.com",
@@ -13,8 +12,5 @@ const firebaseConfig = {
 };
 
 
-export const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
 export const auth= getAuth(app);
-// const provider= new GoogleAuthProvider(); 
-
